@@ -1,0 +1,29 @@
+{
+    "name": "zhiyicx/plus-component-news",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Seven Du",
+            "email": "shiweidu@outlook.com",
+            "homepage": "https://medz.cn"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Zhiyi\\Component\\ZhiyiPlus\\PlusComponentNews\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zhiyi\\Component\\ZhiyiPlus\\PlusComponentNews\\Installer\\NewsServiceProvider"
+            ]
+        }
+    }
+}
